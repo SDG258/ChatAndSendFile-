@@ -35,7 +35,7 @@ public class ClientThread implements Runnable{
         try {
             dis = new DataInputStream(socket.getInputStream());
         } catch (IOException e) {
-            main.appendMessage("[IOException]: "+ e.getMessage(), "Lỗi", Color.RED, Color.RED);
+            main.appendMessage("[IOException]: "+ e.getMessage(), "Lỗi", Color.BLACK, Color.BLACK);
         }
     }
 
@@ -56,7 +56,7 @@ public class ClientThread implements Runnable{
                         while(st.hasMoreTokens()){
                             msg = msg +" "+ st.nextToken();
                         }
-                        main.appendMessage(msg, frm, Color.MAGENTA, Color.BLUE);
+                        main.appendMessage(msg, frm, Color.BLACK, Color.BLACK);
                         break;
                         
                     case "CMD_ONLINE":
@@ -109,12 +109,12 @@ public class ClientThread implements Runnable{
                         break;   
                         
                     default: 
-                        main.appendMessage("[CMDException]: Không rõ lệnh "+ CMD, "CMDException", Color.RED, Color.RED);
+                        main.appendMessage("[CMDException]: Không rõ lệnh "+ CMD, "CMDException", Color.BLACK, Color.BLACK);
                     break;
                 }
             }
         } catch(IOException e){
-            main.appendMessage(" Bị mất kết nối đến Máy chũ, vui lòng thử lại.!", "Lỗi", Color.RED, Color.RED);
+            main.appendMessage(" Bị mất kết nối đến Máy chũ, vui lòng thử lại.!", "Lỗi", Color.BLACK, Color.BLACK);
         }
     }
 }

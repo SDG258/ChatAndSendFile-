@@ -17,17 +17,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
-public class FileFunction {
-    public static void main(String args[]) throws IOException {
-        String currentDirectory = System.getProperty("user.dir");
-        String file = currentDirectory + "/User.txt";
-
-        List<User> users = new ArrayList<>();
-        ReadFile(file, users);
-        
-    }
+public class FileFunction {    
     public static void CheckFile(String dir) throws IOException {
         File f = new File(dir);
         if(!f.exists()) {

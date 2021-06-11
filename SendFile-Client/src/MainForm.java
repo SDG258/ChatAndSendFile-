@@ -108,7 +108,7 @@ public class MainForm extends javax.swing.JFrame {
     public void getMsgHeader(String header, Color color){
         int len = jTextPane1.getDocument().getLength();
         jTextPane1.setCaretPosition(len);
-        jTextPane1.setCharacterAttributes(MessageStyle.styleMessageContent(color, "Impact", 13), false);
+//        jTextPane1.setCharacterAttributes(MessageStyle.styleMessageContent(color, "Impact", 13), false);
         jTextPane1.replaceSelection(header+":");
     }
     /*
@@ -117,7 +117,7 @@ public class MainForm extends javax.swing.JFrame {
     public void getMsgContent(String msg, Color color){
         int len = jTextPane1.getDocument().getLength();
         jTextPane1.setCaretPosition(len);
-        jTextPane1.setCharacterAttributes(MessageStyle.styleMessageContent(color, "Arial", 12), false);
+//        jTextPane1.setCharacterAttributes(MessageStyle.styleMessageContent(color, "Arial", 12), false);
         jTextPane1.replaceSelection(msg +"\n\n");
     }
     
@@ -128,36 +128,36 @@ public class MainForm extends javax.swing.JFrame {
     /*
         Hiển thị danh sách đang online
     */
-    public void showOnLineList(Vector list){
-        try {
-            txtpane2.setEditable(true);
-            txtpane2.setContentType("text/html");
-            StringBuilder sb = new StringBuilder();
-            Iterator it = list.iterator();
-            sb.append("<html><table>");
-            while(it.hasNext()){
-                Object e = it.next();
-//                URL url = getImageFile();
-//                Icon icon = new ImageIcon(this.getClass().getResource("/images/online.png"));
-                sb.append("<tr><td><b>></b></td><td>").append(e).append("</td></tr>");
-                System.out.println("Online: "+ e);
-            }
-            sb.append("</table></body></html>");
-            txtpane2.removeAll();
-            txtpane2.setText(sb.toString());
-            txtpane2.setEditable(false);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }
+//    public void showOnLineList(Vector list){
+//        try {
+//            txtpane2.setEditable(true);
+//            txtpane2.setContentType("text/html");
+//            StringBuilder sb = new StringBuilder();
+//            Iterator it = list.iterator();
+//            sb.append("<html><table>");
+//            while(it.hasNext()){
+//                Object e = it.next();
+////                URL url = getImageFile();
+////                Icon icon = new ImageIcon(this.getClass().getResource("/images/online.png"));
+//                sb.append("<tr><td><b>></b></td><td>").append(e).append("</td></tr>");
+//                System.out.println("Online: "+ e);
+//            }
+//            sb.append("</table></body></html>");
+//            txtpane2.removeAll();
+//            txtpane2.setText(sb.toString());
+//            txtpane2.setEditable(false);
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+//        }
+//    }
     
     /*
       ************************************  Hiển thị danh sách online  *********************************************
     */
     private void sampleOnlineList(Vector list){
-        txtpane2.setEditable(true);
-        txtpane2.removeAll();
-        txtpane2.setText("");
+//        txtpane2.setEditable(true);
+//        txtpane2.removeAll();
+//        txtpane2.setText("");
         Iterator i = list.iterator();
         while(i.hasNext()){
             Object e = i.next();
@@ -170,18 +170,18 @@ public class MainForm extends javax.swing.JFrame {
 //            JLabel label = new JLabel(icon);
 //            label.setText(" "+ e);
 //            panel.add(label);
-            int len = txtpane2.getDocument().getLength();
-            txtpane2.setCaretPosition(len);
-            txtpane2.insertComponent(panel);
+//            int len = txtpane2.getDocument().getLength();
+//            txtpane2.setCaretPosition(len);
+//            txtpane2.insertComponent(panel);
             /*  Append Next Line   */
             sampleAppend();
         }
-        txtpane2.setEditable(false);
+//        txtpane2.setEditable(false);
     }
     private void sampleAppend(){
-        int len = txtpane2.getDocument().getLength();
-        txtpane2.setCaretPosition(len);
-        txtpane2.replaceSelection("\n");
+//        int len = txtpane2.getDocument().getLength();
+//        txtpane2.setCaretPosition(len);
+//        txtpane2.replaceSelection("\n");
     }
     /*
       ************************************  Show Online Sample  *********************************************
@@ -267,9 +267,6 @@ public class MainForm extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
         jTextField1 = new javax.swing.JTextField();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        txtpane2 = new javax.swing.JTextPane();
-        jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         btnSend = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -290,15 +287,6 @@ public class MainForm extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-
-        txtpane2.setFont(new java.awt.Font("Tahoma", 1, 9)); // NOI18N
-        txtpane2.setForeground(new java.awt.Color(120, 14, 3));
-        txtpane2.setAutoscrolls(false);
-        txtpane2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jScrollPane3.setViewportView(txtpane2);
-
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel1.setText("Danh sách bạn bè");
 
         btnSend.setText("Gửi");
         btnSend.addActionListener(new java.awt.event.ActionListener() {
@@ -351,28 +339,16 @@ public class MainForm extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane3)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGap(18, 18, 18))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(15, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnSend)
-                        .addGap(13, 13, 13))))
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnSend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -381,17 +357,14 @@ public class MainForm extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(17, 17, 17)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField1)
-                            .addComponent(btnSend)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                            .addComponent(btnSend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(9, 9, 9))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
@@ -504,17 +477,14 @@ public class MainForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem LogoutMenu;
     private javax.swing.JButton btnSend;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextPane jTextPane1;
     private javax.swing.JMenuItem sendFileMenu;
-    private javax.swing.JTextPane txtpane2;
     // End of variables declaration//GEN-END:variables
 }
