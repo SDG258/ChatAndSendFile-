@@ -11,14 +11,14 @@ Hướng dẫn setup project
 ![image](https://user-images.githubusercontent.com/46186797/121677812-99fe5880-cae0-11eb-907a-e031ffafbf5f.png)
 - B6: Ta có thể gửi file ở trong mục chia sẻ file và chọn gửi file
 ![image](https://user-images.githubusercontent.com/46186797/121677983-ca45f700-cae0-11eb-810f-b903b700ed7b.png)
--B7: Sau khi chọn file xong ta nhập tên người nhận file và nhấn vào gửi file
+- B7: Sau khi chọn file xong ta nhập tên người nhận file và nhấn vào gửi file
 
 ![image](https://user-images.githubusercontent.com/46186797/121678076-ec3f7980-cae0-11eb-90e1-24490399927f.png)
 
--B8: Bên người nhận sẽ hiển thị hộ thoại thông báo có người gửi file và có muốn nhận không, nếu có thì chọn chỗ lưu file
+- B8: Bên người nhận sẽ hiển thị hộ thoại thông báo có người gửi file và có muốn nhận không, nếu có thì chọn chỗ lưu file
 ![image](https://user-images.githubusercontent.com/46186797/121678285-36c0f600-cae1-11eb-8dce-3c2947f495e7.png)
 
--B9: Muốn thoát thì nhấn nút x trên cửa sổ
+- B9: Muốn thoát thì nhấn nút x trên cửa sổ
 
 Các chức năng của project:
  - Đăng ký tài khoản
