@@ -6,9 +6,6 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu3">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/sharing.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Chia S&#x1ebb; File"/>
           </Properties>
           <Events>
@@ -17,9 +14,6 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="sendFileMenu">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/sendfile.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="G&#x1eed;i File"/>
               </Properties>
               <Events>
@@ -28,9 +22,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/process.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="T&#x1ea3;i Xu&#x1ed1;ng"/>
               </Properties>
               <Events>
@@ -41,17 +32,11 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu2">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/check.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="T&#xe0;i Kho&#x1ea3;n"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="LogoutMenu">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/images/loggoff.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="&#x110;&#x103;ng Xu&#x1ea5;t"/>
               </Properties>
               <Events>

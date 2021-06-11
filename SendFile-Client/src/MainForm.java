@@ -7,13 +7,9 @@ import java.awt.Toolkit;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import java.net.URL;
 import java.util.Iterator;
 import java.util.Vector;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -141,8 +137,8 @@ public class MainForm extends javax.swing.JFrame {
             sb.append("<html><table>");
             while(it.hasNext()){
                 Object e = it.next();
-                URL url = getImageFile();
-                Icon icon = new ImageIcon(this.getClass().getResource("/images/online.png"));
+//                URL url = getImageFile();
+//                Icon icon = new ImageIcon(this.getClass().getResource("/images/online.png"));
                 sb.append("<tr><td><b>></b></td><td>").append(e).append("</td></tr>");
                 System.out.println("Online: "+ e);
             }
@@ -170,10 +166,10 @@ public class MainForm extends javax.swing.JFrame {
             panel.setLayout(new FlowLayout(FlowLayout.LEFT));
             panel.setBackground(Color.white);
             
-            Icon icon = new ImageIcon(this.getClass().getResource("/images/online.png"));
-            JLabel label = new JLabel(icon);
-            label.setText(" "+ e);
-            panel.add(label);
+//            Icon icon = new ImageIcon(this.getClass().getResource("/images/online.png"));
+//            JLabel label = new JLabel(icon);
+//            label.setText(" "+ e);
+//            panel.add(label);
             int len = txtpane2.getDocument().getLength();
             txtpane2.setCaretPosition(len);
             txtpane2.insertComponent(panel);
@@ -197,10 +193,10 @@ public class MainForm extends javax.swing.JFrame {
     /*
         Get image file path
     */
-    public URL getImageFile(){
-        URL url = this.getClass().getResource("/images/online.png");
-        return url;
-    }
+//    public URL getImageFile(){
+//        URL url = this.getClass().getResource("/images/online.png");
+//        return url;
+//    }
     
     
     /*
@@ -311,7 +307,6 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sharing.png"))); // NOI18N
         jMenu3.setText("Chia Sẻ File");
         jMenu3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -319,7 +314,6 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        sendFileMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sendfile.png"))); // NOI18N
         sendFileMenu.setText("Gửi File");
         sendFileMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -328,7 +322,6 @@ public class MainForm extends javax.swing.JFrame {
         });
         jMenu3.add(sendFileMenu);
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/process.png"))); // NOI18N
         jMenuItem3.setText("Tải Xuống");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -339,10 +332,8 @@ public class MainForm extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/check.png"))); // NOI18N
         jMenu2.setText("Tài Khoản");
 
-        LogoutMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loggoff.png"))); // NOI18N
         LogoutMenu.setText("Đăng Xuất");
         LogoutMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
