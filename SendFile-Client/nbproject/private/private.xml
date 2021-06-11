@@ -3,9 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/MainForm.java</file>
-            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/ClientThread.java</file>
-            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/LoginForm.java</file>
+            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/Display/RegisterForm.java</file>
+            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/Function/ClientThread.java</file>
+            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/Display/LoginForm.java</file>
+            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/Models/User.java</file>
+            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/Function/SendFile.java</file>
+            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/Display/MainForm.java</file>
+            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/Function/ReceivingFileThread.java</file>
+            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/Function/SendingFileThread.java</file>
+            <file>file:/C:/Users/Song%20Du/Desktop/Stuty/OneDrive%20-%20NVC/Java/SendFile-Client/src/Function/FileFunction.java</file>
         </group>
     </open-files>
 </project-private>
