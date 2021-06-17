@@ -16,7 +16,9 @@ Hướng dẫn setup project
 ![image](https://user-images.githubusercontent.com/46186797/121678076-ec3f7980-cae0-11eb-90e1-24490399927f.png)
 
 - B8: Bên người nhận sẽ hiển thị hộ thoại thông báo có người gửi file và có muốn nhận không, nếu có thì chọn chỗ lưu file
+
 ![image](https://user-images.githubusercontent.com/46186797/121678285-36c0f600-cae1-11eb-8dce-3c2947f495e7.png)
+
 
 - B9: Muốn thoát thì nhấn nút x trên cửa sổ
 
